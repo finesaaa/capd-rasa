@@ -4,9 +4,9 @@ nlu:
 - intent: greet
   examples: |
     - hey
-    - hello
+    - hallo
     - hi
-    - hello there
+    - hallo there
     - good morning
     - good evening
     - moin
