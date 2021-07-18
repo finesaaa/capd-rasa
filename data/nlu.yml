@@ -1,93 +1,108 @@
 version: "2.0"
 
 nlu:
-- intent: greet
+- intent: salam
   examples: |
     - hey
+    - assalamualaikum
+    - assalmualaikum wr wb
+    - halo
     - hallo
     - hi
-    - hallo there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - halo di sana
+    - selamat pagi
+    - selamat malam
+    - hey disana
+    - ayo
+    - hey bro
+    - good siang
 
-- intent: goodbye
+- intent: sampai_jumpa
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
+    - selamat tinggal
+    - sampai jumpa
+    - sampai ketemu besok
     - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - semoga harimu indah
+    - semoga harimu menyenangkan
+    - dadah
+    - dah
+    - see you 
 
-- intent: affirm
+- intent: setuju
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - iya
+    - ya
+    - benar
+    - tentu saja
+    - itu kedengaran bagus
+    - tepat
 
-- intent: deny
+- intent: menolak
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - tidak
+    - nggak
+    - tidak pernah
+    - aku tidak berpikir seperti itu
+    - jangan seperti itu
+    - tidak mungkin
+    - tidak juga
 
-- intent: mood_great
+- intent: mood_senang
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - sempurna
+    - hebat
+    - luar biasa
+    - berasa seperti raja
+    - aku merasa sangat baik
+    - aku hebat
+    - aku luar biasa
+    - aku akan menyelamatkan dunia
+    - sangatlah baik sekali
+    - sangat-sangat sempurna
+    - sangat baik
+    - sempurna sekali
 
-- intent: mood_unhappy
+- intent: mood_sedih
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - hariku buruk
+    - aku sedih
+    - aku merasa tidak senang
+    - aku kecewa
+    - super sedih
+    - aku sangat sedih
+    - sedih
+    - sangat sedih
+    - tidak senang
+    - tidak baik
+    - sangat tidak baik
+    - sangatlah sedih
+    - sedih banget
+    - sedih parah
     - sedih
 
-- intent: bot_challenge
+- intent: tantangan_bot
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - apakah kamu robot?
+    - apakah kamu manusia?
+    - apakah saya bicara dengan robot?
+    - apakah saya bicara dengan manusia?
+    - kamu robot
+
+- intent: tanya_perawatan_takut
+  examples: | 
+    - saya takut perawatan selama ini
+    - apakah normal apabila saya ketakutan?
+    - apa yang harus saya lakukan apabila takut dan sakit?
+    - bagaimana supaya tidak takut?
+    - saya takut
+    - saya ketakutan
+
+- intent: tanya_perawatan_tanggung_jawab
+  examples: |
+    - saya harus apa?
+    - saya harus ngapain?
+    - bagaimana tanggung jawab saya?
+    - apa tanggung jawab saya?
+    - apa yang harus saya lakukan?
+    
