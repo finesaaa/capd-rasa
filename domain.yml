@@ -1,18 +1,19 @@
 version: "2.0"
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - salam
+  - sampai_jumpa
+  - setuju
+  - menolak
+  - mood_senang
+  - mood_sedih
+  - tantangan_bot
   - tanya_perawatan_takut
+  - tanya_perawatan_tanggung_jawab
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
+  utter_salam:
+  - text: "Hai! Apa Kabar?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -29,6 +30,27 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_takut:
+  - text: "Wajar untuk Takut dan Khawatir."
+    text: "Tenang, DoctorBot di sini untuk kamu."
+    text: "Langkah-langkah berikut dapat membantu mengatasi perasaan tersebut:"
+    text: "1. Hubungi Dokter Dialisis pada Fitur Profil"
+    text: "2. Berikan semua kekhawatiran dan ketakutanmu terkait dialisis"
+    text: "3. Perhatikan Gambar Berikut"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+    text: "Semoga Harimu Menyenangkan :D"
+
+    utter_tanggungjawab:
+  - text: "Tanggung Jawab adalah langkah awal dalam penyesuaian diri."
+    text: "Sebagai Pasien GGK kamu harus:"
+    text: "1. Ketahui dan minum obat sesuai resep"
+    text: "2. Menginformasikan staf perawatan kesehatan tentang masalah minum obat"
+    text: "3. Tepat waktu untuk perawatan dialisis terjadwal"
+    text: "4. Ikuti diet yang ditentukan dan pembatasan cairan"
+    text: "5. Beri tahu staf perawatan kesehatan tentang masalah apa pun dalam mengikuti diet"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+    text: "Semoga Harimu Menyenangkan :D"
 
 session_config:
   session_expiration_time: 60
