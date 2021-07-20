@@ -1,10 +1,13 @@
 version: "2.0"
 
 nlu:
-- intent: greet
+- intent: salam
   examples: |
     - hey
-    - hello
+    - assalamualaikum
+    - assalmualaikum wr wb
+    - halo
+    - hallo
     - hi
     - hello there
     - good morning
@@ -33,13 +36,11 @@ nlu:
     - ayo
     - hey bro
 
-- intent: goodbye
+- intent: sampai_jumpa
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
+    - selamat tinggal
+    - sampai jumpa
+    - sampai ketemu besok
     - bye
     - goodbye
     - have a nice day
@@ -54,7 +55,7 @@ nlu:
     - dadah
     - dah
 
-- intent: affirm
+- intent: setuju
   examples: |
     - yes
     - y
@@ -73,7 +74,7 @@ nlu:
     - itu kedengaran bagus
     - tepat
 
-- intent: deny
+- intent: menolak
   examples: |
     - no
     - n
@@ -97,7 +98,7 @@ nlu:
     - tdk mungkin
     - tidak juga
 
-- intent: mood_great
+- intent: mood_senang
   examples: |
     - perfect
     - great
@@ -133,7 +134,7 @@ nlu:
     - sempurna sekali
     - hariku indah
 
-- intent: mood_unhappy
+- intent: mood_sedih
   examples: |
     - my day was horrible
     - I am sad
@@ -166,7 +167,7 @@ nlu:
     - sedih
     - galau
 
-- intent: bot_challenge
+- intent: tantangan_bot
   examples: |
     - are you a bot?
     - are you a human?
