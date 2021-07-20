@@ -9,22 +9,22 @@ stories:
     intent: greet
   - action: utter_greet
   - user: |
-      amazing
+      luar biasa
     intent: mood_great
   - action: utter_happy
 
 - story: happy path 2
   steps:
   - user: |
-      hello there!
+      assalamualaikum!
     intent: greet
   - action: utter_greet
   - user: |
-      amazing
+      luar biasa
     intent: mood_great
   - action: utter_happy
   - user: |
-      bye-bye!
+      dadah!
     intent: goodbye
   - action: utter_goodbye
 
@@ -35,12 +35,12 @@ stories:
     intent: greet
   - action: utter_greet
   - user: |
-      not good
+      tidak baik
     intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      yes
+      iya
     intent: affirm
   - action: utter_happy
 
@@ -51,12 +51,12 @@ stories:
     intent: greet
   - action: utter_greet
   - user: |
-      not good
+      sedih sekali
     intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      not really
+      tidak begitu
     intent: deny
   - action: utter_goodbye
 
@@ -67,7 +67,7 @@ stories:
     intent: greet
   - action: utter_greet
   - user: |
-      very terrible
+      kacau sekali
     intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
@@ -86,6 +86,20 @@ stories:
 - story: bot challenge
   steps:
   - user: |
-      are you a bot?
+      apa kamu robot?
     intent: bot_challenge
   - action: utter_iamabot
+
+- story: ask afraid of treatment
+  steps:
+  - user: |
+      saya tidak tahu gejala ini
+    intent: afraid_treatment
+  - action: utter_afraid_treatment
+
+- story: ask responsibility of treatment
+  steps:
+  - user: |
+      saya harus bagaimana?
+    intent: responsibility_treatment
+  - action: utter_responsibility_treatment

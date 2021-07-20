@@ -16,6 +16,22 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - assalamualaikum
+    - ass
+    - assalamualaikum wr wb
+    - hi
+    - halo
+    - halo di sana
+    - selamat pagi
+    - selamat malam
+    - selamat siang
+    - pagi
+    - siang
+    - malam
+    - sayang
+    - hey disana
+    - ayo
+    - hey bro
 
 - intent: goodbye
   examples: |
@@ -30,6 +46,13 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - selamat tinggal
+    - sampai jumpa
+    - sampai ketemu besok
+    - semoga harimu indah
+    - semoga harimu menyenangkan
+    - dadah
+    - dah
 
 - intent: affirm
   examples: |
@@ -39,6 +62,16 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - iya
+    - ya
+    - bener
+    - sip
+    - mantap
+    - ok
+    - benar
+    - tentu saja
+    - itu kedengaran bagus
+    - tepat
 
 - intent: deny
   examples: |
@@ -49,6 +82,20 @@ nlu:
     - don't like that
     - no way
     - not really
+    - tdk
+    - ga
+    - ngga
+    - gapernah
+    - ga gitu
+    - tdk begitu
+    - tidak
+    - nggak
+    - tidak pernah
+    - aku tidak berpikir seperti itu
+    - jangan seperti itu
+    - tidak mungkin
+    - tdk mungkin
+    - tidak juga
 
 - intent: mood_great
   examples: |
@@ -66,6 +113,25 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+    - baik
+    - hebat
+    - luar biasa
+    - alhamdulillah
+    - belum pernah merasa sesehat ini
+    - good mood
+    - senang
+    - bahagia
+    - senang sekali
+    - bahagia sekali
+    - aku merasa sangat baik
+    - aku hebat
+    - aku luar biasa
+    - aku akan menyelamatkan dunia
+    - sangatlah baik sekali
+    - sangat-sangat sempurna
+    - sangat baik
+    - sempurna sekali
+    - hariku indah
 
 - intent: mood_unhappy
   examples: |
@@ -83,6 +149,22 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+    - hariku buruk
+    - aku kecewa
+    - aku sedih
+    - aku merasa tidak senang
+    - aku kecewa
+    - aku sangat sedih
+    - sedih
+    - sangat sedih
+    - tidak senang
+    - tidak baik
+    - sangat tidak baik
+    - sangatlah sedih
+    - sedih banget
+    - sedih parah
+    - sedih
+    - galau
 
 - intent: bot_challenge
   examples: |
@@ -90,3 +172,31 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - apakah kamu robot?
+    - apakah kamu manusia?
+    - apakah saya bicara dengan robot?
+    - apakah saya bicara dengan manusia?
+    - kamu robot
+  
+- intent: afraid_treatment
+  examples: | 
+    - saya tidak tahu gejala ini
+    - apa selama ini saya sudah benar
+    - saya takut perawatan selama ini
+    - apakah normal apabila saya ketakutan?
+    - apa yang harus saya lakukan apabila takut dan sakit?
+    - bagaimana supaya tidak takut?
+    - saya takut
+    - saya ketakutan
+    - saya takut salah
+
+- intent: responsibility_treatment
+  examples: |
+    - saya harus apa?
+    - saya harus ngapain?
+    - saya harus bagaimana
+    - saya harus gimana?
+    - aku harus apa
+    - bagaimana tanggung jawab saya?
+    - apa tanggung jawab saya?
+    - apa yang harus saya lakukan?

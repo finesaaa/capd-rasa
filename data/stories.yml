@@ -28,3 +28,13 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: ask afraid treatment
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: afraid_treatment
+  - action: utter_afraid_treatment
+  - intent: responsibility_treatment
+  - action: utter_responsibility_treatment
+  

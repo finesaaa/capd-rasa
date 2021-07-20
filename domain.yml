@@ -8,26 +8,50 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - afraid_treatment
+  - responsibility_treatment
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hai, apa kabar?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  - text: "Aku punya sesuatu untuk menghibur Anda:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "Apa itu membantu Anda?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Sip, lanjutkan!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Dadah"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Saya doctorbot, sangat sayang Anda."
+
+  utter_afraid_treatment:
+  - text: "Wajar untuk takut dan khawatir.
+        \nTenang, DoctorBot di sini untuk kamu.
+        \nLangkah-langkah berikut dapat membantu mengatasi perasaan tersebut:
+        \n1. Hubungi Dokter Dialisis pada Fitur Profil
+        \n2. Berikan semua kekhawatiran dan ketakutanmu terkait dialisis
+        \n3. Perhatikan Gambar Berikut
+        \nSemoga Harimu Menyenangkan :D"
+    buttons:
+    - title: Harus Apa
+      payload: /responsibility_treatment
+
+  utter_responsibility_treatment:
+  - text: "Tanggung Jawab adalah langkah awal dalam penyesuaian diri.
+        \nSebagai Pasien GGK kamu harus:
+        \n1. Ketahui dan minum obat sesuai resep
+        \n2. Menginformasikan staf perawatan kesehatan tentang masalah minum obat
+        \n3. Tepat waktu untuk perawatan dialisis terjadwal
+        \n4. Ikuti diet yang ditentukan dan pembatasan cairan
+        \n5. Beri tahu staf perawatan kesehatan tentang masalah apa pun dalam mengikuti diet
+        \nSemoga Harimu Menyenangkan :D"
 
 session_config:
   session_expiration_time: 60
