@@ -10,6 +10,8 @@ intents:
   - bot_challenge
   - afraid_treatment
   - responsibility_treatment
+  - complication_type
+  - peritonitis
 
 responses:
   utter_greet:
@@ -40,8 +42,10 @@ responses:
         \n3. Perhatikan Gambar Berikut
         \nSemoga Harimu Menyenangkan :D"
     buttons:
-    - title: Harus Apa
-      payload: /responsibility_treatment
+    - title: "Harus Apa"
+      payload: '/responsibility_treatment'
+    - title: "Risiko Komplikasi"
+      payload: '/complication_type'
 
   utter_responsibility_treatment:
   - text: "Tanggung Jawab adalah langkah awal dalam penyesuaian diri.
@@ -53,27 +57,21 @@ responses:
         \n5. Beri tahu staf perawatan kesehatan tentang masalah apa pun dalam mengikuti diet
         \nSemoga Harimu Menyenangkan :D"
 
-  utter_takut:
-  - text: "Wajar untuk Takut dan Khawatir."
-    text: "Tenang, DoctorBot di sini untuk kamu."
-    text: "Langkah-langkah berikut dapat membantu mengatasi perasaan tersebut:"
-    text: "1. Hubungi Dokter Dialisis pada Fitur Profil"
-    text: "2. Berikan semua kekhawatiran dan ketakutanmu terkait dialisis"
-    text: "3. Perhatikan Gambar Berikut"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-    text: "Semoga Harimu Menyenangkan :D"
-
-    utter_tanggungjawab:
-  - text: "Tanggung Jawab adalah langkah awal dalam penyesuaian diri."
-    text: "Sebagai Pasien GGK kamu harus:"
-    text: "1. Ketahui dan minum obat sesuai resep"
-    text: "2. Menginformasikan staf perawatan kesehatan tentang masalah minum obat"
-    text: "3. Tepat waktu untuk perawatan dialisis terjadwal"
-    text: "4. Ikuti diet yang ditentukan dan pembatasan cairan"
-    text: "5. Beri tahu staf perawatan kesehatan tentang masalah apa pun dalam mengikuti diet"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-    text: "Semoga Harimu Menyenangkan :D"
-
+  utter_complication_type:
+  - text: "Komplikasi yang berhubungan dengan CAPD secara umum dapat dibagi menjadi 3 kategori
+        \nyaitu mekanik, metabolik, dan radang (infeksi)
+        \nUmumnya adalah peritonitis."
+    buttons:
+    - title: "Pengertian Peritonitis"
+      payload: '/peritonitis'
+  
+  utter_peritonitis:
+  - text: "Peritonitis adalah komplikasi infeksi pada rongga peritoneum 
+      \nakibat masuknya mikroorganisme melalui kateter, celah kateter, 
+      \nataupun invasi dari dinding usus.
+      \nManifestasi klinis peritonitis dapat berupa cairan dialisat 
+      \nyang keruh, nyeri perut, dan demam."
+    
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

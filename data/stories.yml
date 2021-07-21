@@ -37,4 +37,13 @@ stories:
   - action: utter_afraid_treatment
   - intent: responsibility_treatment
   - action: utter_responsibility_treatment
+
+- story: ask complication
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: complication_type
+  - action: utter_complication_type
+  - intent: peritonitis
+  - action: utter_peritonitis
   

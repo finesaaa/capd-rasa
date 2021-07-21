@@ -103,3 +103,17 @@ stories:
       saya harus bagaimana?
     intent: responsibility_treatment
   - action: utter_responsibility_treatment
+
+- story: ask complication type
+  steps:
+  - user: |
+      apa saja jenis komplikasi?
+    intent: complication_type
+  - action: utter_complication_type
+
+  - story: ask peritonitis
+  steps:
+  - user: |
+      apa itu peritonitis?
+    intent: peritonitis
+  - action: utter_peritonitis

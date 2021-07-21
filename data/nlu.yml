@@ -1,7 +1,7 @@
 version: "2.0"
 
 nlu:
-- intent: salam
+- intent: greet
   examples: |
     - hey
     - assalamualaikum
@@ -36,7 +36,7 @@ nlu:
     - ayo
     - hey bro
 
-- intent: sampai_jumpa
+- intent: goodbye
   examples: |
     - selamat tinggal
     - sampai jumpa
@@ -55,7 +55,7 @@ nlu:
     - dadah
     - dah
 
-- intent: setuju
+- intent: affirm
   examples: |
     - yes
     - y
@@ -74,7 +74,7 @@ nlu:
     - itu kedengaran bagus
     - tepat
 
-- intent: menolak
+- intent: deny
   examples: |
     - no
     - n
@@ -98,7 +98,7 @@ nlu:
     - tdk mungkin
     - tidak juga
 
-- intent: mood_senang
+- intent: mood_great
   examples: |
     - perfect
     - great
@@ -134,7 +134,7 @@ nlu:
     - sempurna sekali
     - hariku indah
 
-- intent: mood_sedih
+- intent: mood_unhappy
   examples: |
     - my day was horrible
     - I am sad
@@ -167,7 +167,7 @@ nlu:
     - sedih
     - galau
 
-- intent: tantangan_bot
+- intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
@@ -201,3 +201,20 @@ nlu:
     - bagaimana tanggung jawab saya?
     - apa tanggung jawab saya?
     - apa yang harus saya lakukan?
+
+- intent: complication_type
+  examples: |
+    - apa saja jenis komplikasi?
+    - komplikasi capd
+    - komplikasi CAPD
+    - maksudnya komplikasi itu seperti apa?
+    - komplikasi capd jenisnya apa?
+    - jenis komplikasi CAPD
+
+- intent: peritonitis
+  examples: |
+    - apa itu peritonitis?
+    - peritonitis?
+    - apa peritonitis?
+    - penyakit 
+
