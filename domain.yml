@@ -12,6 +12,9 @@ intents:
   - responsibility_treatment
   - complication_type
   - peritonitis
+  - diet_treatment
+  - diet_recommendation
+  - exit_site
 
 responses:
   utter_greet:
@@ -71,7 +74,45 @@ responses:
       \nataupun invasi dari dinding usus.
       \nManifestasi klinis peritonitis dapat berupa cairan dialisat 
       \nyang keruh, nyeri perut, dan demam."
-    
+
+  utter_diet_treatment:
+  - text: "Mengikuti rekomendasi diet sejak dini pada penyakit ginjal 
+      \ndapat memperlambat perkembangan gagal ginjal 
+      \ndan membantu kamu mengelola masalah
+      \nyang disebabkan oleh penyakit dengan lebih baik. 
+      \nDokter akan memandu dan membantu kamu
+      \ndalam pembuatan rencana nutrisi yang tepat.
+      \nHal ini akan merubah hidupmu lebih baik :D"
+    buttons:
+    - title: "Rekomendasi Diet"
+      payload: '/diet_recommendation'
+
+  utter_diet_recommendation:
+  - text: "Rekomendasi Diet sangatlah bergantung pada dirimu.  
+      \nKarena kamu merupakan orang yang spesial :D 
+      \nMaka ceritakan lah situasi spesialmu ke Dokter dengan baik.
+      \nAdapun topik pembahasan untuk diet yang baik di antaranya: 
+      \nAsupan protein, natrium fosfat, cairan, kalium, dan vitamin.
+      \nHal ini akan merubah hidupmu lebih baik :D"
+
+  utter_exit_site:
+  - text: "Baiklah, Instruksi ini akan cukup panjang.  
+      \nPersiapkan diri kamu dengan baik :D 
+      \nSebagai Pasien GGK kamu harus sterilkan kateter sebagai berikut:
+      \n1. Cuci tangan dengan sabun dan air.
+      \n2. Kenakan sarung tangan bersih.
+      \n3. Pegang kateter di tempatnya selama pembersihan untuk mencegah cedera pada kulit.
+      \n4. Jangan mengambil atau menghilangkan kerak atau keropeng di tempat keluarnya.
+      \n5. Bersihkan dengan sabun antibakteri atau pembersih.
+      \n6. Bilas dengan air steril atau larutan garam.
+      \n7. Tepuk lembut kulit kering di sekitar situs keluar dengan kain bersih atau handuk.
+      \n8. Gunakan kain atau handuk hanya satu kali dan jangan gunakan pada bagian tubuh yang lain.
+      \n9. Oleskan krim antibiotik pada kulit di sekitar kateter dengan ujung kapas setiap kali balutan diganti.
+      \n10. Jangan gunakan krim apa pun dengan minyak bumi karena dapat merusak kateter.
+      \n11. Selang keluar harus ditutup dengan kain kasa steril.
+      \n12. Kateter harus menempel pada kulit dengan selotip khusus yang memungkinkan kulit mendapatkan udara.
+      \nSemoga Harimu Menyenangkan :D"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

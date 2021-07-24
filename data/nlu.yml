@@ -227,6 +227,9 @@ nlu:
     - diet dialysis
     - bagaimana diet saya?
     - apa pentingnya diet?
+
+- intent: diet_recommendation
+  examples: |
     - makan
     - makan apa?
     - makanan apa yang perlu dikendalikan?
