@@ -46,4 +46,19 @@ stories:
   - action: utter_complication_type
   - intent: peritonitis
   - action: utter_peritonitis
-  
+
+- story: ask diet treatment
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: diet_treatment
+  - action: utter_diet_treatment
+  - intent: diet_recommendation
+  - action: utter_diet_recommendation  
+
+- story: ask exit site
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: exit_site
+  - action: utter_exit_site

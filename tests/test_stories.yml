@@ -117,3 +117,24 @@ stories:
       apa itu peritonitis?
     intent: peritonitis
   - action: utter_peritonitis
+
+  - story: ask diet treatment
+  steps:
+  - user: |
+      bagaimana diet saya?
+    intent: diet_treatment
+  - action: utter_diet_treatment
+
+  - story: ask diet recommendation
+  steps:
+  - user: |
+      makanan apa yang perlu dikendalikan?
+    intent: diet_recommendation
+  - action: utter_diet_recommendation
+
+  - story: ask exit site
+  steps:
+  - user: |
+      cara merawat selang keluar
+    intent: exit_site
+  - action: utter_exit_site
