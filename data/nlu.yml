@@ -218,3 +218,33 @@ nlu:
     - apa peritonitis?
     - penyakit 
 
+- intent: diet_treatment
+  examples: |
+    - saya harus diet?
+    - diet
+    - saya diet
+    - perlukah diet?
+    - diet dialysis
+    - bagaimana diet saya?
+    - apa pentingnya diet?
+    - makan
+    - makan apa?
+    - makanan apa yang perlu dikendalikan?
+    - asupan
+    - asupan apa?
+
+- intent: exit_site
+  examples: |
+    - selang keluar
+    - cara merawat selang 
+    - cara merawat selang keluar
+    - selang
+    - kateter
+    - catheter
+    - katerer higienis
+    - exit site
+    - membersihkan area perut
+    - higienis
+    - selang higienis
+    - taking care PD catheter
+    - catheter hygiene
