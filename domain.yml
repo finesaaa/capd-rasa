@@ -15,6 +15,7 @@ intents:
   - diet_treatment
   - diet_recommendation
   - exit_site
+  - what_peritonial_dialysis
 
 responses:
   utter_greet:
@@ -113,6 +114,24 @@ responses:
       \n12. Kateter harus menempel pada kulit dengan selotip khusus yang memungkinkan kulit mendapatkan udara.
       \nSemoga Harimu Menyenangkan :D"
 
+  utter_replacement_guide:
+  - text: "1. Keluarkan Transfer set dari kantung (pastikan transfer set tertutup)
+      \n2. Klem saluran pengisian & pengeluaran cairan
+      \n3. Patahkan Frangible
+      \n4. Tarik / lepaskan \"Pull Ring\" & buka minicap
+      \n5. Lalu sambungkan
+      \n6. Bilas saluran pengisian dengan cairan dialisat (hitung 1-5 secara perlahan)
+      \n7. Gantungkan kantung cairan baru pd timbangan
+      \n8. Tempatkan kantung pengeluaran/pembuangan di bawah dng beralaskan baki
+      \n9. Buka \"Twist Clamp\""
+    
+  utter_what_peritonial_dialysis:
+  - text: "Dialisis Peritonial (PD) dapat dilakukan di rumah, di tempat kerja, 
+      \ndi sekolah atau di mana pun tersedia ruang pribadi yang bersih untuk pertukaran kantong cairan. 
+      \nDua jenis dialisis peritoneal adalah automated peritoneal dialysis (APD), 
+      \nyang membutuhkan penggunaan mesin, dan continuous ambulatory peritoneal dialysis (CAPD), 
+      \nyang tidak menggunakan mesin."
+      
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

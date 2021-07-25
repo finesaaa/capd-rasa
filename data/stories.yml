@@ -31,8 +31,6 @@ stories:
 
 - story: ask afraid treatment
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: afraid_treatment
   - action: utter_afraid_treatment
   - intent: responsibility_treatment
@@ -40,8 +38,6 @@ stories:
 
 - story: ask complication
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: complication_type
   - action: utter_complication_type
   - intent: peritonitis
@@ -62,3 +58,8 @@ stories:
   - action: utter_greet
   - intent: exit_site
   - action: utter_exit_site
+  
+- story: ask pd
+  steps:
+  - intent: what_peritonial_dialysis
+  - action: utter_what_peritonial_dialysis

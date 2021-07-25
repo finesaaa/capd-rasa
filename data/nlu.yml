@@ -242,6 +242,7 @@ nlu:
     - cara merawat selang 
     - cara merawat selang keluar
     - selang
+    - kebersihan kateter
     - kateter
     - catheter
     - katerer higienis
@@ -251,3 +252,12 @@ nlu:
     - selang higienis
     - taking care PD catheter
     - catheter hygiene
+
+- intent: what_peritonial_dialysis
+  examples: |
+    - apa itu peritonial dialysis
+    - pd
+    - peritonial dialysis
+    - pengertian pd
+    - apa itu pd
+    
