@@ -25,3 +25,9 @@ Chatbot for SahabatCAPD App Powered By RasaHQ:)
 rasa run actions
 rasa run -m models --enable-api --endpoints endpoints.yml
 ```
+
+# Update Image
+```
+docker build --build-arg PORT=<port> --build-arg USER=<user_name> -t capd-rasa:<tag> -f docker/Dockerfile capd-bot/
+```
+
