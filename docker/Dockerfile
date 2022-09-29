@@ -9,7 +9,7 @@ ENV USER=${USER:-capd}
 EXPOSE $PORT
 
 RUN python3 -m pip install --no-cache --upgrade pip
-RUN pip3 install --no-cache rasa
+RUN pip3 install --no-cache rasa==2.8.1
 
 ADD . /app/
 
