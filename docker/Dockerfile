@@ -25,4 +25,3 @@ USER $USER
 ENTRYPOINT ["/app/launch_bot.sh"]
 
 CMD $PORT
-
